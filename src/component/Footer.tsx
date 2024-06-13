@@ -19,7 +19,7 @@ const Footer = () => {
       >
         <Box
           sx={{
-            width: "50%",
+            width: { xs: "80%", md: "50%" },
 
             justifyContent: "center",
             display: "flex",
@@ -61,7 +61,7 @@ const Footer = () => {
               alignItems: "center",
             }}
           >
-            <Link to="main" smooth={true} duration={800} className="arrow">
+            <Link to="home" smooth={true} duration={800} className="arrow">
               <ArrowUpwardTwoTone
                 sx={{ color: "#dadada", fontWeight: "bold", cursor: "pointer" }}
               />

@@ -16,6 +16,8 @@ const ContactUs = () => {
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState("");
 
+  const isValid = name && message && email;
+
   const sendEmail = (e: any) => {
     e.preventDefault();
     const templateID = "template_7egzd0i";
@@ -104,8 +106,8 @@ const ContactUs = () => {
             <Animation2
               divName={messageRef}
               option={{ opacity: 1, y: 0, duration: 2.5 }}
-              startPosition="top 80%"
-              endPosition="top 30%"
+              startPosition="top 75%"
+              endPosition="top 40%"
             />
 
             <Box sx={{ width: "80%" }}>
@@ -123,6 +125,7 @@ const ContactUs = () => {
             </Box>
 
             <Button
+              disabled={!isValid ? true : false}
               onClick={sendEmail}
               variant="contained"
               sx={{ width: "fit-content", mt: 3, bgcolor: "#535C91" }}

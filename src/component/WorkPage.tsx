@@ -1,10 +1,12 @@
 import { ArrowRightAltRounded } from "@mui/icons-material";
 import { Box, IconButton, Typography } from "@mui/material";
 import React, { useEffect, useRef } from "react";
-import foodiePhoto from "../asset/foodie.jpg";
+import foodiePhoto from "../asset/foodie.png";
+import coffeeShop from "../asset/coffeeshop.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HeaderText from "./HeaderText";
+import { Link } from "react-scroll";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -70,7 +72,7 @@ const WorkPage = () => {
       >
         <Box
           sx={{
-            justifyContent: "space-between",
+            justifyContent: "center",
             alignItems: "center",
             display: "flex",
             flexWrap: " wrap",
@@ -88,6 +90,7 @@ const WorkPage = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
+              mr: { xs: 0, lg: 4 },
               borderRadius: 5,
               opacity: 0,
               transform: "translateX(-50px)",
@@ -102,20 +105,29 @@ const WorkPage = () => {
             {/* arrow icon */}
             <Box
               sx={{
-                width: "100%",
+                width: "80%",
                 display: "flex",
                 justifyContent: "flex-end",
+                mt: 2,
               }}
             >
-              <IconButton sx={{ mr: 4 }}>
+              <a
+                href="https://www.paithetdev.com"
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
                 <ArrowRightAltRounded
                   sx={{
                     fontSize: 32,
                     color: "#dadada",
-                    "&:hover": { color: "#9290C3" },
+                    borderRadius: "50%",
+                    "&:hover": {
+                      backgroundColor: "#dadadaab",
+                      color: "#1B1A55",
+                    },
                   }}
                 />
-              </IconButton>
+              </a>
             </Box>
             {/* for project name */}
             <Box
@@ -123,7 +135,6 @@ const WorkPage = () => {
                 display: "flex",
                 flexDirection: "column",
                 width: "80%",
-                height: 30,
               }}
             >
               <Typography
@@ -150,14 +161,13 @@ const WorkPage = () => {
                 width: "80%",
                 display: "flex",
                 alignItems: "flex-end",
-                justifyContent: "center",
                 mt: 5,
               }}
             >
               <img
                 src={foodiePhoto}
                 alt="foodie"
-                style={{ width: "100%", height: "80%" }}
+                style={{ width: "100%", height: "100%" }}
               />
             </Box>
           </Box>
@@ -185,20 +195,29 @@ const WorkPage = () => {
             {/* arrow icon */}
             <Box
               sx={{
-                width: "100%",
+                width: "80%",
                 display: "flex",
                 justifyContent: "flex-end",
+                mt: 2,
               }}
             >
-              <IconButton sx={{ mr: 4 }}>
+              <a
+                style={{ textDecoration: "none" }}
+                target="_blank"
+                href="https://ko-pai.github.io/coffee-shop"
+              >
                 <ArrowRightAltRounded
                   sx={{
                     fontSize: 32,
                     color: "#dadada",
-                    "&:hover": { color: "#9290C3" },
+                    borderRadius: "50%",
+                    "&:hover": {
+                      backgroundColor: "#dadadaab",
+                      color: "#1B1A55",
+                    },
                   }}
                 />
-              </IconButton>
+              </a>
             </Box>
             {/* for project name */}
             <Box
@@ -206,13 +225,12 @@ const WorkPage = () => {
                 display: "flex",
                 flexDirection: "column",
                 width: "80%",
-                height: 30,
               }}
             >
               <Typography
                 sx={{ color: "#dadada", fontFamily: "inherit", fontSize: 26 }}
               >
-                Foodie POS
+                Coffee Shop
               </Typography>
               <Typography
                 sx={{
@@ -238,9 +256,9 @@ const WorkPage = () => {
               }}
             >
               <img
-                src={foodiePhoto}
+                src={coffeeShop}
                 alt="foodie"
-                style={{ width: "100%", height: "80%" }}
+                style={{ width: "100%", height: "100%" }}
               />
             </Box>
           </Box>
