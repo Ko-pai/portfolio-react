@@ -16,6 +16,7 @@
     opacity: 0;
     transform: translateX(-100px);
     border-radius: 5px;
+    outline: none;
 
     &::-webkit-input-placeholder {
       color: #dadadab4;
@@ -41,6 +42,7 @@
     opacity: 0;
     transform: translateY(100px);
     border-radius: 8px;
+    outline:  none;
 
     padding: 8px;
     &::-webkit-input-placeholder {

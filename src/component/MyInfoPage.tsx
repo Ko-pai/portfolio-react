@@ -158,12 +158,25 @@ const MyInfo = () => {
                     mb: 2,
                     mr: 1,
                     transition: "all .4s ease",
-
+                    
                     cursor: "pointer",
                     "&:hover": {
                       transform: "translateY(-10px)",
                       opacity: 0.8,
+                      outline : "none !important",
+                      userSelect : "none !important",
+                      border : "none",
+                      "-webkit-tap-highlight-color": "transparent"
                     },
+                    "&:focus" : {
+                      outline : "none !important",
+                      userSelect : "none !important",
+                      border : "none"
+                    },
+                    "&:active": {
+      outline: "none",
+      border: "none"
+    }
                   }}
                 >
                   <img
