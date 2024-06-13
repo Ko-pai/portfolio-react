@@ -55,4 +55,5 @@ export const Animation2 = ({
     });
   }, [divName, option]);
   return null;
+
 };

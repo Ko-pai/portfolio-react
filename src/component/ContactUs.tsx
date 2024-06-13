@@ -123,7 +123,7 @@ const ContactUs = () => {
             </Box>
 
             <Button
-              onSubmit={sendEmail}
+              onClick={sendEmail}
               variant="contained"
               sx={{ width: "fit-content", mt: 3, bgcolor: "#535C91" }}
             >
