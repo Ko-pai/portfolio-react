@@ -87,6 +87,7 @@ const ContactUs = () => {
               className="nameInput"
               name="user_email"
               value={email}
+              type="email"
               onChange={(e) => setEmail(e.target.value)}
             />
             <Animation2
@@ -106,7 +107,7 @@ const ContactUs = () => {
             <Animation2
               divName={messageRef}
               option={{ opacity: 1, y: 0, duration: 2.5 }}
-              startPosition="top 75%"
+              startPosition="top 90%"
               endPosition="top 40%"
             />
 

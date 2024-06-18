@@ -28,7 +28,7 @@ const HomePage = () => {
       <Box
         ref={left}
         sx={{
-          width: { xs: "100%", lg: "50%" },
+          width: { xs: "80%", lg: "50%" },
           height: { xs: "43%", lg: "100%" },
           bgcolor: "transparent",
           display: "flex",
@@ -74,14 +74,13 @@ const HomePage = () => {
         sx={{
           width: { xs: "100%", lg: "50%" },
           height: { xs: "45%", lg: "100%" },
-          top : 20 ,
+          top: 20,
           bgcolor: "transparent",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           opacity: 0,
           transform: "translateX(200px)",
-          
         }}
       >
         <img src={profile} alt="profile.png" className="profileImg" />
@@ -109,7 +108,7 @@ const HomePage = () => {
           alignItems: "center",
           justifyContent: "center",
           textDecoration: "none",
-          marginTop : "20px"
+          marginTop: "20px",
         }}
       >
         <img src={arrow} alt="arrow" />
