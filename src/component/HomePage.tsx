@@ -24,6 +24,7 @@ const HomePage = () => {
       className="container"
       id="home"
     >
+      
       {/* for left */}
       <Box
         ref={left}
