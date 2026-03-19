@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import React, { useRef } from "react";
 import profile from "../asset/myProfile.png";
 import "../styles/myInfo.scss";
@@ -7,7 +7,6 @@ import { Animation2 } from "./Animation";
 import HeaderText from "./HeaderText";
 
 const MyInfo = () => {
-  const textRef = useRef<HTMLDivElement | null>(null);
   const imgRef = useRef<HTMLDivElement | null>(null);
   const downloadRef = useRef<HTMLDivElement | null>(null);
   const skillIconRef = useRef<HTMLDivElement | null>(null);

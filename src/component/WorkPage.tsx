@@ -1,12 +1,11 @@
 import { ArrowRightAltRounded } from "@mui/icons-material";
-import { Box, IconButton, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React, { useEffect, useRef } from "react";
 import foodiePhoto from "../asset/foodie.png";
 import coffeeShop from "../asset/coffeeshop.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HeaderText from "./HeaderText";
-import { Link } from "react-scroll";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -114,6 +113,7 @@ const WorkPage = () => {
               <a
                 href="https://www.paithetdev.com"
                 target="_blank"
+                rel="noreferrer"
                 style={{ textDecoration: "none" }}
               >
                 <ArrowRightAltRounded
@@ -204,6 +204,7 @@ const WorkPage = () => {
               <a
                 style={{ textDecoration: "none" }}
                 target="_blank"
+                rel="noreferrer"
                 href="https://ko-pai.github.io/coffee-shop"
               >
                 <ArrowRightAltRounded

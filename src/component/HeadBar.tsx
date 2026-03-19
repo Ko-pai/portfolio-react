@@ -4,7 +4,7 @@ import "../styles/headbar.scss";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useEffect, useRef, useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const HeadBar = () => {
   const navBarRef = useRef<HTMLDivElement | null>(null);

@@ -1,5 +1,5 @@
 import { Box, Button, Typography } from "@mui/material";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import HeaderText from "./HeaderText";
 import "../styles/contactMe.scss";
 import emailjs from "@emailjs/browser";
@@ -42,7 +42,7 @@ const ContactUs = () => {
       (error) => {
         console.log("FAILED...", error.text);
         setSuccess("Send message not successful.");
-      }
+      },
     );
   };
 

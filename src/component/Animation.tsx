@@ -6,7 +6,9 @@ import { ServiceItem } from "../icon";
 gsap.registerPlugin(ScrollTrigger);
 
 interface Prop {
-  divName: React.MutableRefObject<HTMLDivElement | null> | React.MutableRefObject<HTMLTextAreaElement | null>;
+  divName:
+    | React.MutableRefObject<HTMLDivElement | null>
+    | React.MutableRefObject<HTMLTextAreaElement | null>;
   arrayName?: ServiceItem;
   option: Partial<gsap.TweenVars>;
   startPosition?: string;
@@ -31,9 +33,8 @@ export const Animation = ({
       // Adjust the duration to control the speed of the animation
       ...option,
     });
-  }, [divName, option]);
+  }, [divName, option, startPosition, endPosition]);
   return null;
-  
 };
 
 export const Animation2 = ({
@@ -53,7 +54,6 @@ export const Animation2 = ({
       },
       ...option,
     });
-  }, [divName, option]);
+  }, [divName, option, startPosition, endPosition]);
   return null;
-
 };

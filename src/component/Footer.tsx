@@ -1,8 +1,8 @@
 import { Box, Typography } from "@mui/material";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import React from "react";
 import "../styles/footer.scss";
-import { ArrowUpward, ArrowUpwardTwoTone } from "@mui/icons-material";
+import { ArrowUpwardTwoTone } from "@mui/icons-material";
 
 const Footer = () => {
   return (

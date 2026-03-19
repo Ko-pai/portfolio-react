@@ -1,9 +1,9 @@
 import { Box, Typography } from "@mui/material";
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import "../styles/homepage.scss";
 import profile from "../asset/myProfile.png";
 import arrow from "../asset/arrow.gif";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import { Animation } from "./Animation";

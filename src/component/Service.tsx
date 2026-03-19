@@ -1,12 +1,8 @@
 import { Box, Typography } from "@mui/material";
-import React, { useEffect, useRef } from "react";
-import WebIcon from "@mui/icons-material/Web";
+import React, { useRef } from "react";
 import { serviceData } from "../icon";
 import HeaderText from "./HeaderText";
 import { Animation2 } from "./Animation";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
 const Service = () => {
   const cardRefs = useRef<HTMLDivElement | null>(null);
